@@ -1,0 +1,68 @@
+/* variables (colores) */
+:root {
+  /*Primary  */
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+
+  /* ### Neutral */
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+  --font-general: "Poppins", sans-serif;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font size-general 62.5% */
+  font-size: 32px;
+  font-family: var(--font-general);
+  background-color: var(--light-grey);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  width: 90%;
+  height: 400px;
+  max-width: 700px;
+  background-color: var(--white);
+  margin: auto;
+  border-radius: 30px 30px 110px 30px;
+  overflow: hidden;
+}
+.header {
+  height: 35%;
+  border-bottom: 0.5px solid var(--smokey-grey);
+}
+.button {
+  background-color: var(--purple);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: none;
+  position: relative;
+  bottom: 30px;
+  left:70%;
+}
+.button img {
+  width: 35px;
+  height: 35px;
+}
