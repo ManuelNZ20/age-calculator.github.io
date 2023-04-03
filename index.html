@@ -18,31 +18,32 @@
 
 <body>
   <div class="container" id="main">
-    <div class="header">
+    <div class="header container">
       <div class="header-input container">
         <label for="day">
           Day
           <input id="day" type="text" placeholder="DD">
         </label>
-        <span class="error error-day"></span>
+        <span class="error error-day inactive">This field is required</span>
       </div>
       <div class="header-input container">
         <label for="month">
           Month
           <input id="month" type="text" placeholder="MM">
         </label>
-        <span class="error error-month"></span>
+        <span class="error error-month inactive">This field is required</span>
       </div>
       <div class="header-input container">
         <label for="year">
           Year
           <input id="year" type="text" placeholder="YYYY">
         </label>
-        <span class="error error-year"></span>
+        <span class="error error-year inactive">This field is required</span>
       </div>
     </div>
+    <hr class="line">
     <button class="button"><img src="./assets/images/icon-arrow.svg" alt=""></button>
-    <div class="result">
+    <div class="result container">
       <p class="result-info">
         <span class="result-info-year"> --</span> years
       </p>
@@ -50,7 +51,7 @@
         <span class="result-info-months"> --</span> months
       </p>
       <p class="result-info">
-        <span class="result-info-days"> --</span> days
+        <span class="result-info-days"> -- </span> days
       </p>
     </div>
   </div>
