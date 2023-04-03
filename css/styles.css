@@ -43,11 +43,11 @@ body {
   width: 90%;
   height: 50%;
   max-height: 900px;
-  max-width: 650px;
+  max-width: 600px;
   background-color: var(--white);
   border-radius: 30px 30px 110px 30px;
   overflow: hidden;
-  padding: 20px 20px 0;
+  padding: 40px 20px 0;
   justify-content: space-between;
 }
 .header {
@@ -89,7 +89,7 @@ input:focus {
   font-size: calc(1em - 2px);
 }
 .inactive {
-  /* display: none; */
+  display: none;
 }
 .line {
   height: 0;
@@ -129,7 +129,11 @@ input:focus {
 }
 
 @media only screen and (min-width: 500px) {
+  #main {
+    height: 60%;
+  }
   .header {
+    height: 25%;
     gap: 20px;
     justify-content: flex-start;
     transition: 3s;
@@ -140,19 +144,19 @@ input:focus {
   }
   .button {
     width: 80px;
-    height: 100px;
+    height: 80px;
     left: 80%;
-    bottom: 30px;
+    bottom: 40px;
     transition: 3s;
   }
   .result-info {
-    margin: -70px 0 30px 5px;
-    font-size: 2.2rem;
+    margin: -50px 0 25px 5px;
+    font-size: 2rem;
   }
 }
 
-@media only screen and (max-height:750px) {
-    #main {
-        height: 400px;
-    }
+@media only screen and (max-height: 750px) {
+  #main {
+    height: 400px;
+  }
 }
